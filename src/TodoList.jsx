@@ -2,8 +2,9 @@ import React from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 const style = {
   row: `flex`,
-  li: `flex justify-between bg-gray-900 p-6 my-4 uppercase`,
-  text: `text-yellow-200`,
+  li: `flex justify-between bg-gray-300 p-6 my-4 uppercase`,
+  text: `text-black ml-2 cursor-pointer`,
+  btnText: "text-black",
 };
 
 export const TodoList = () => {
@@ -14,7 +15,7 @@ export const TodoList = () => {
           <input type="checkbox" />
           <p class={style.text}>Todo</p>
         </div>
-        <button>
+        <button className={style.btnText}>
           <FaRegTrashAlt />
         </button>
       </li>
